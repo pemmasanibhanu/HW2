@@ -16,33 +16,35 @@ header .container, main .container, footer .container {
 header {
 	background: white;
 	overflow: auto;
-	border-bottom: 2px solid #EDEDED;
+	border-bottom: 1px solid #DDD;
+	padding: 25px 0 25px 0;
 }
 
 header h1 {
 	float: left;
 	width: 570px;
-	font-size: 3.5em;
+	font-size: 3em;
 	font-weight: bold;
 	font-style: italic;
-	color: #A74440;
+	color: #b33;
 }
 
 header nav {
 	float: right;
 	width: 285px;
-	font-size: 1.1em;
 }
 
 main {
 	background: white;
 	overflow: auto;
-	border-bottom: 2px solid #EDEDED;
+	border-bottom: 1px solid #DDD;
+	padding: 40px 0;
 }
 
 main .left {
 	float: left;
 	width: 570px;
+	padding: 30px 0;
 }
 
 main .right {
@@ -50,18 +52,30 @@ main .right {
 	width: 285px;
 }
 
-main h2 {
+main .left h2 {
 	font-size: 2em;
 	font-weight: bold;
+	margin: 0 0 10px 0;
 }
 
-main h3 {
-	font-style: 1.3em;
+main .left p {
+	margin: 0 0 30px 0;
+}
+
+main .left h3 {
+	font-style: 1.5em;
 	font-size: larger;
+	margin: 0 0 10px 0;
+}
+
+main .left li {
+	list-style: disc;
+	margin-left: 30px;
 }
 
 footer {
 	overflow: auto;
+	padding: 25px 0 20px 0;
 }
 
 footer .contact {
@@ -74,20 +88,34 @@ footer .sitemap {
 	width: 285px;
 }
 
-footer h5 {
-	font-size: 1.5em;
+footer ul {
+	width: 230px;
 }
 
-h1, h2, h3, h4 {
+footer h5 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+footer .sitemap .left {
+	float: left;
+}
+
+footer .sitemap .right {
+	float: right;
+}
+
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Ubuntu', sans-serif;
 }
 
 .redbrown {
-	color: #C86960;
+	color: #b33;
+	font-style: italic;
 }
 
 a {
-	color: red;
+	color: #f00;
 	text-decoration: none;
 }
 
