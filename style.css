@@ -1,6 +1,7 @@
 body {
 	background: #f9e933;
 	font-family: 'Droid Sans', sans-serif;
+	font-size: 100%;
 }
 
 header, main, footer {
@@ -15,21 +16,28 @@ header .container, main .container, footer .container {
 header {
 	background: white;
 	overflow: auto;
+	border-bottom: 2px solid #EDEDED;
 }
 
 header h1 {
 	float: left;
 	width: 570px;
+	font-size: 3.5em;
+	font-weight: bold;
+	font-style: italic;
+	color: #A74440;
 }
 
 header nav {
 	float: right;
 	width: 285px;
+	font-size: 1.1em;
 }
 
 main {
 	background: white;
 	overflow: auto;
+	border-bottom: 2px solid #EDEDED;
 }
 
 main .left {
@@ -40,6 +48,16 @@ main .left {
 main .right {
 	float: right;
 	width: 285px;
+}
+
+main h2 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+main h3 {
+	font-style: 1.3em;
+	font-size: larger;
 }
 
 footer {
@@ -56,6 +74,23 @@ footer .sitemap {
 	width: 285px;
 }
 
+footer h5 {
+	font-size: 1.5em;
+}
+
 h1, h2, h3, h4 {
 	font-family: 'Ubuntu', sans-serif;
+}
+
+.redbrown {
+	color: #C86960;
+}
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
