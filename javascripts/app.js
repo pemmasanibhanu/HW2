@@ -1,12 +1,12 @@
 var main = function() {
 	"use strict";
 	var toDos = [
-		"Закончить писать эту книгу",
-		"Вывести Грейси на прогулку в парк",
-		"Ответить на электронные письма",
-		"Подготовиться к лекции в понедельник",
-		"Обновить несколько новых задач",
-		"Купить продукты"
+		"Get groceries",
+        "Make up some new ToDos",
+        "Prep for Monday's class",
+        "Answer emails",
+        "Take Gracie to the park",
+        "Finish writing this book"
 	];
 	$(".tabs a span").toArray().forEach(function(element) {
 		$(element).on("click", function() {
