@@ -7,7 +7,6 @@ var organizeByTag = function(toDoObjects) {
 			}
 		});
 	});
-	console.log(tags);
 
 	return tags.map(function (tag) {
 		var toDos = [];
@@ -21,13 +20,17 @@ var organizeByTag = function(toDoObjects) {
 			"toDos": toDos
 		};
 	});
-};	
+};
+
+var getOnlyDescriptionToDos = function(toDoObjects) {
+	return toDoObjects.map(function(toDo) {
+		return toDo.description;
+	});
+};
 
 var main = function(toDoObjects) {
 	"use strict";
-	var toDos = toDoObjects.map(function (toDo) {
-		return toDo.description;
-	});
+	var toDos = getOnlyDescriptionToDos(toDoObjects);
 	$(".tabs a span").toArray().forEach(function(element) {
 		var $element = $(element);
 		$element.on("click", function() {
@@ -61,17 +64,34 @@ var main = function(toDoObjects) {
 				});
 			}
 			else if ($element.parent().is(":nth-child(4)")) {
-				var $input = $("<input>"),
+				var $input = $("<input>").addClass("description"),
+					$inputLabel = $("<p>").text("Description: "),
+					$tagInput = $("<input>").addClass("tags"),
+					$tagLabel = $("<p>").text("Tags: "),
                 	$button = $("<button>").text("+");
 
                 $button.on("click", function () {
-                    if ($input.val() !== "") {
-                        toDos.push($input.val());
-                        $input.val("");
-                    }
+                	if ($input.val() !== "") {
+                		var description = $input.val(),
+                		tags = $tagInput.val().split(",");
+
+                		toDoObjects.push({
+                			"description": description,
+                			"tags": tags
+                		});
+
+                		toDos = getOnlyDescriptionToDos(toDoObjects);
+
+                		$input.val("");
+                		$tagInput.val("");
+                	}
                 });
 
-                $content = $("<div>").append($input, $button);
+                $content = $("<div>").append($inputLabel)
+                					 .append($input)
+                					 .append($tagLabel)
+                					 .append($tagInput)
+                					 .append($button);
 			}
 			$("main .content").append($content);
 			return false;
