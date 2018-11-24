@@ -1,3 +1,28 @@
+var organizeByTag = function(toDoObjects) {
+	var tags = [];
+	toDoObjects.forEach(function (toDo) {
+		toDo.tags.forEach(function (tag) {
+			if (tags.indexOf(tag) === -1) {
+				tags.push(tag);
+			}
+		});
+	});
+	console.log(tags);
+
+	return tags.map(function (tag) {
+		var toDos = [];
+		toDoObjects.forEach(function (toDo) {
+			if (toDo.tags.indexOf(tag) !== -1) {
+				toDos.push(toDo.description);
+			}
+		});
+		return {
+			"name": tag,
+			"toDos": toDos
+		};
+	});
+};	
+
 var main = function(toDoObjects) {
 	"use strict";
 	var toDos = toDoObjects.map(function (toDo) {
@@ -23,17 +48,7 @@ var main = function(toDoObjects) {
 				});
 			}
 			else if ($element.parent().is(":nth-child(3)")) {
-				console.log("click of tags tab");
-				var organizedByTag = [
-					{
-						"name": "shopping",
-						"toDos": ["Get groceries"]
-					},
-					{
-						"name": "chores",
-						"toDos": ["Get groceries", "Take Gracie to the park"]
-					}
-				];
+				var organizedByTag = organizeByTag(toDoObjects);
 				organizedByTag.forEach(function (tag) {
 					var $tagName = $("<h3>").text(tag.name),
 						$content = $("<ul>");
@@ -64,6 +79,7 @@ var main = function(toDoObjects) {
 	});
 	$(".tabs a:first-child span").trigger("click");
 };
+
 $(document).ready(function () {
 	//$.getJSON("todos.json", function (toDoObjects) {
 		main(toDoObjects);
