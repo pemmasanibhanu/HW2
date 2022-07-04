@@ -1,4 +1,4 @@
-var toDoObjects = [
+[
     { 
         "description" : "Get groceries",
         "tags"  : [ "shopping", "chores" ]

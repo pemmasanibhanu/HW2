@@ -1,157 +1,157 @@
 body {
-	background: #f9e933;
-	font-family: 'Droid Sans', sans-serif;
-	font-size: 100%;
-}
-
-header, main, footer {
-	min-width: 855px;
-}
-
-header .container, main .container, footer .container {
-	max-width: 855px;
-	margin: auto;
-}
-
-header {
-	background: white;
-	overflow: auto;
-	border-bottom: 1px solid #DDD;
-	padding: 25px 0 25px 0;
-}
-
-h1 {
-	float: left;
-	width: 570px;
-	font-size: 3em;
-	font-weight: bold;
-	font-style: italic;
-	color: #b33;
-}
-
-h5 {
-	font-size: 1.25em;
-	margin-bottom: 20px;
-}
-
-header nav {
-	float: right;
-	width: 285px;
-}
-
-a {
-	color: #f00;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-main {
-	background: #fff;
-	overflow: auto;
-	border-bottom: 1px solid #DDD;
-	padding: 40px;
-	border-radius: 0 5px 5px 5px;
-
-}
-
-.tabs a span {
-	display: inline-block;
-	border-radius: 5px 5px 0 0;
-	width: 100px;
-	margin-right: 10px;
-	text-align: center;
-	background: #ddd;
-	padding: 5px;
-}
-
-.tabs a .active {
-	background: #eee;
-}
-
-main .content {
-	padding: 30px 10px 30px 10px;
-	border-radius: 0 5px 5px 5px;
-	background: #eee;
-}
-
-main .content li {
-	border-radius: 5px;
-	padding: 3px;
-	background: #eff;
-	margin: 0 0 10px 0;
-}
-
-main .content button {
-	font-weight: bold;
-	padding: 0 3px 0 3px;
-	border-radius: 5px;
-	background: #ccc;
-	cursor: pointer;
-	margin-left: 5px;
-	font-size: 1.3em;
-}
-
-main .content p {
-	background: yellow;
-}
-
-main .content input {
-	font-size: 1.5em;
-}
-
-h2 {
-	font-size: 2em;
-	font-weight: bold;
-	margin: 0 0 10px 0;
-}
-
-footer {
-	overflow: auto;
-	padding: 25px 0 20px 0;
-	border-top: 1px solid #ddd;
-}
-
-footer .contact {
-	float: left;
-	width: 570px;	
-}
-
-footer .contact p:nth-child(2) {
-	color: #b33;
-	font-style: italic;
-}
-
-footer .sitemap {
-	float: right;
-	width: 285px;
-}
-
-footer ul {
-	width: 230px;
-}
-
-footer h5 {
-	font-size: 1.5em;
-	margin-bottom: 10px;
-}
-
-footer .sitemap .left {
-	float: left;
-}
-
-footer .sitemap .right {
-	float: right;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Ubuntu', sans-serif;
-}
-
-.redbrown {
-	color: #b33;
-	font-style: italic;
-}
+    background: #0de5ed;
+    font-family: 'Droid Sans', sans-serif;
+  }
+  
+  header, main, footer {
+    min-width: 855px;
+  }
+  
+  header .container, main .container, footer .container {
+    max-width: 855px;
+    margin: auto;
+  }
+  
+  h2, h4, h6 {
+    font-family: 'Tangerine', sans-serif;
+  }
+  
+  header {
+    padding: 40px 0 40px 0;
+    background: white;
+    overflow: auto;
+    border-bottom: 25px solid rgb(192, 23, 23);
+  }
+  
+  h1 {
+    font-family: 'Tangerine', sans-serif;
+    font-style: italic;
+    font-size: 3em;
+    color: rgb(139, 9, 245);
+    float: left;
+    width: 600px;
+  }
+  
+  header nav {
+    float: right;
+    width: 300px;
+  }
+  
+  a {
+    color: rgb(148, 13, 245);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main {
+      background: rgb(243, 156, 244);
+      border-radius: 0 5px 5px 5px;;
+      padding: 40px;
+  }
+  
+  .tabs a span {
+      border-radius: 5px 5px 0 0;
+      display: inline-block;
+      width: 90px;
+      margin-right: 10px;
+      text-align: center;
+      background: rgb(241, 197, 232);
+      padding: 10px;
+  }
+  
+  .tabs a .active {
+      background: rgb(46, 5, 5);
+  }
+  
+  main .content {
+      padding: 35px 15px 25px 15px;
+      border-radius: 0 10px 15px 15px;
+      background: rgb(238, 237, 125);
+  }
+  
+  h3 {
+      font-family: 'Tangerine', sans-serif;
+      border-radius: 5px;
+      color: #999;;
+      background: #ddd;
+      padding: 5px;
+      margin: 20px 0 10px 0;
+  }
+  
+  h3:first-child {
+      margin-top: 0;
+  }
+  
+  main .content li {
+      border-radius: 5px;
+      padding: 3px;
+      background: rgb(119, 235, 235);
+      margin: 0 0 10px 0;
+  }
+  
+  main .content button {
+    font-weight: bold;
+    padding: 0 3px 0 3px;
+    border-radius: 5px;
+    background: #ccc;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 1.3em;
+  }
+  
+  main .content p {
+      color: red;
+      margin: 30px 0 0 0;
+  }
+  
+  main .content p:first-child {
+      margin-top: 10px;
+  }
+  
+  main .content input {
+      font-size: 1.5em;
+  }
+  
+  
+  
+  footer {
+      border-top: 1px solid #ddd;
+      padding: 40px 0 20px 0;
+  }
+  
+  footer .contact {
+    float: left;
+    width: 570px;    
+  }
+  
+  h5 {
+      font-family: 'Tangerine', sans-serif;
+      font-size: 2em;
+      margin-bottom: 20px;
+  }
+  
+  footer .contact p:nth-child(2) {
+    color: #b33;
+    font-style: italic;
+  }
+  
+  footer .sitemap {
+      float: right;
+      width: 285px;
+  }
+  
+  footer ul {
+      width: 230px;
+  }
+  
+  li {
+      list-style: none;
+  }
+  
+  footer .sitemap .left {
+      float: left;
+  }
+  
+  footer .sitemap .right {
+      float: right;
+  }
